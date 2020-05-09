@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  <title>
+  <%= htmlWebpackPlugin.options.title %>
+  </title>
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+  <style>
+  body {
+  background-image: url("https://hdwallpapers.imgix.net/freestockphotos-44901565676457ysug51ovg6.jpg?auto=compress&cs=tinysrgb&dpr=1");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+.container {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+.row {
+    display:flex;
+}
+
+.cell {
+  width: 250px;
+  height: 250px;
+  border: 0.1px solid #000;
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.fas {
+  font-size: 1500%;
+  display: flex;
+  align-items: center;
+  margin-left: 18%;
+}
+.cell:hover {
+  background: #000;
+  opacity:0.04;
+}
+
+.text {
+  position: absolute;
+  text-align: center;
+  margin-left: 44.5%;
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="text">
+    <h2>Kółko i krzyżyk</h2>
+  </div>
+    <div class="container">
+    <div class="game">
+      <div class="row" id="r1">
+          <div class="cell" id="c1"></div>
+          <div class="cell" id="c2"></div>
+          <div class="cell" id="c3"></div>
+      </div>
+        <div class="row" id="r2">
+            <div class="cell" id="c4"></div>
+            <div class="cell" id="c5"></div>
+            <div class="cell" id="c6"></div>
+        </div>
+        <div class="row" id="r3">
+            <div class="cell" id="c7"></div>
+            <div class="cell" id="c8"></div>
+            <div class="cell" id="c9"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
